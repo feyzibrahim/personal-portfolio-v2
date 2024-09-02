@@ -171,6 +171,17 @@ export default function Home() {
 					</Link>
 					.
 				</h3>
+				<p className="text-foreground-secondary">
+					Checkout old{" "}
+					<Link
+						className="text-primary hover:underline"
+						href="https://v1-feyz-ibrahim.vercel.app/"
+						target="_blank"
+					>
+						website
+					</Link>{" "}
+					for more info.
+				</p>
 			</div>
 			<div className="h-full lg:flex items-center justify-center hidden">
 				<div>
