@@ -27,6 +27,13 @@ export default function SnakeGame() {
 	const [highScore, setHighScore] = useState(0);
 
 	const handleKeyPress = (e: KeyboardEvent) => {
+		if (
+			isGameStarted &&
+			["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)
+		) {
+			e.preventDefault();
+		}
+
 		switch (e.key) {
 			case "ArrowUp":
 				if (direction.y !== 1) setDirection({ x: 0, y: -1 });

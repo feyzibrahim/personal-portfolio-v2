@@ -17,14 +17,14 @@ export default function Home() {
 			<RightHanger />
 
 			{/* Landing Session */}
-			<div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-2 bg-background h-screen px-5 lg:px-32">
-				<div className="space-y-5 flex flex-col justify-center">
+			<div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-5 bg-background h-screen px-5 lg:px-32">
+				<div className="space-y-5 flex flex-col justify-center col-span-3">
 					<p className="text-primary">Hello there, I&apos;m</p>
 					<h1 className="text-3xl lg:text-7xl font-bold mb-4 text-foreground">
 						Feyz Ibrahim.
 					</h1>
 					<h1 className="text-3xl lg:text-6xl font-bold mb-4 text-foreground-secondary">
-						Software Engineer
+						Software Engineer.
 					</h1>
 					<h3>
 						I&apos;m a software engineer specializing in building (and
@@ -52,7 +52,7 @@ export default function Home() {
 						for more info.
 					</p>
 				</div>
-				<div className="h-full lg:flex items-center justify-center hidden">
+				<div className="h-full lg:flex items-center justify-center hidden  col-span-2">
 					<SnakeGame />
 				</div>
 			</div>
