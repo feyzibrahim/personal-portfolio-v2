@@ -1,3 +1,4 @@
+import ExperienceSwitch from "@/components/experience-switch";
 import LeftHanger from "@/components/left-hanger";
 import Navbar from "@/components/navbar";
 import RightHanger from "@/components/right-hanger";
@@ -74,7 +75,7 @@ export default function Home() {
 			</div>
 
 			{/* About Me */}
-			<div className="h-screen px-5 lg:px-32 ">
+			<div className="lg:h-screen px-5 lg:px-32 ">
 				<SectionTitle title="About Me" />
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 					<div className="space-y-5">
@@ -130,6 +131,13 @@ export default function Home() {
 						/>
 					</div>
 				</div>
+			</div>
+
+			{/* Experience */}
+
+			<div className="lg:h-screen px-5 lg:px-32 pt-16">
+				<SectionTitle title="Experience" isCenter />
+				<ExperienceSwitch />
 			</div>
 		</div>
 	);
