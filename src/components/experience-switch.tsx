@@ -10,7 +10,7 @@ export default function ExperienceSwitch() {
 			id: 0,
 			title: "Basys.ai",
 			position: "Software Engineer",
-			duration: "Mar 2024 - Present",
+			duration: "May 2024 - Present",
 			points: [
 				"Developed a web application from inception to automate the Prior Authorization System in the US.",
 				"Integrated ChatGPT and Claude.AI into the project alongside an in-house AI system.",
@@ -23,7 +23,7 @@ export default function ExperienceSwitch() {
 			id: 1,
 			title: "Brototype",
 			position: "MERN stack developer",
-			duration: "Mar 2023 - Mar 2024",
+			duration: "Jun 2023 - Apr 2024",
 			points: [
 				"Developed a full-stack e-commerce platform using MVC architecture with features like product ordering, payment integration, a wallet system, and admin controls.",
 				"Implemented role-based authentication to ensure secure and personalized user access based on roles.",
@@ -53,7 +53,7 @@ export default function ExperienceSwitch() {
 						key={company.id}
 						className={`px-5 w-full lg:w-40 py-2 hover:bg-background-secondary hover:text-primary cursor-pointer duration-300 ${
 							activeCompany === company.id
-								? `bg-background-secondary text-primary`
+								? `text-primary`
 								: `text-foreground-secondary`
 						}`}
 						onClick={() => setActiveCompany(company.id)}

@@ -1,4 +1,5 @@
 import ExperienceSwitch from "@/components/experience-switch";
+import FeaturedProjects from "@/components/featured-projects";
 import LeftHanger from "@/components/left-hanger";
 import Navbar from "@/components/navbar";
 import RightHanger from "@/components/right-hanger";
@@ -134,10 +135,25 @@ export default function Home() {
 			</div>
 
 			{/* Experience */}
-
 			<div className="lg:h-screen px-5 lg:px-32 pt-16">
 				<SectionTitle title="Experience" isCenter />
 				<ExperienceSwitch />
+			</div>
+
+			{/* Featured Projects */}
+			<div className="px-5 lg:px-40">
+				<SectionTitle title="Projects" />
+				<FeaturedProjects />
+			</div>
+
+			{/* Other Noteworthy Projects */}
+			<div className="px-5 lg:px-80 lg:h-screen">
+				<SectionTitle title="Other Noteworthy Projects" isCenter />
+				<Link href="/archive">
+					<p className="text-foreground-secondary hover:text-primary hover:-translate-y-1 duration-300 text-center -mt-5">
+						view the archive
+					</p>
+				</Link>
 			</div>
 		</div>
 	);
