@@ -2,6 +2,7 @@ import ExperienceSwitch from "@/components/experience-switch";
 import FeaturedProjects from "@/components/featured-projects";
 import LeftHanger from "@/components/left-hanger";
 import Navbar from "@/components/navbar";
+import OtherNoteworthyProjects from "@/components/other-noteworthy-projects";
 import RightHanger from "@/components/right-hanger";
 import SectionTitle from "@/components/section-title";
 import SnakeGame from "@/components/snake-game";
@@ -147,13 +148,14 @@ export default function Home() {
 			</div>
 
 			{/* Other Noteworthy Projects */}
-			<div className="px-5 lg:px-80 lg:h-screen">
+			<div className="px-5 lg:px-40 pb-20">
 				<SectionTitle title="Other Noteworthy Projects" isCenter />
 				<Link href="/archive">
 					<p className="text-foreground-secondary hover:text-primary hover:-translate-y-1 duration-300 text-center -mt-5">
 						view the archive
 					</p>
 				</Link>
+				<OtherNoteworthyProjects />
 			</div>
 		</div>
 	);
