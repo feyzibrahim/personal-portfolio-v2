@@ -1,26 +1,14 @@
 import ExperienceSwitch from "@/components/experience-switch";
 import FeaturedProjects from "@/components/featured-projects";
-import LeftHanger from "@/components/left-hanger";
-import Navbar from "@/components/navbar";
 import OtherNoteworthyProjects from "@/components/other-noteworthy-projects";
-import RightHanger from "@/components/right-hanger";
 import SectionTitle from "@/components/section-title";
 import SnakeGame from "@/components/snake-game";
-import { Settings } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
 	return (
 		<div>
-			<div className="w-full h-10 bg-background-secondary flex items-center gap-2 justify-center text-white">
-				<Settings className="w-4 h-4 animate-spin" />
-				<p className="text-xs">Development in progress</p>
-			</div>
-			<Navbar />
-			<LeftHanger />
-			<RightHanger />
-
 			{/* Landing Section */}
 			<div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-5 bg-background lg:h-screen px-5 lg:px-32">
 				<div className="lg:space-y-5 flex flex-col pt-20 lg:pt-0 lg:justify-center col-span-3">
@@ -156,6 +144,23 @@ export default function Home() {
 					</p>
 				</Link>
 				<OtherNoteworthyProjects />
+			</div>
+
+			{/* Contact  */}
+			<div className="px-5 lg:px-40 pb-20 lg:h-screen flex flex-col justify-center">
+				<SectionTitle title="Get In Touch" isCenter />
+				<p className="lg:w-1/2 text-center mx-auto">
+					Although I&apos;m not currently looking for any new opportunities, my
+					inbox is always open. Whether you have a question or just want to say
+					hi, I&apos;ll try my best to get back to you!
+				</p>
+				<Link
+					target="_blank"
+					href="mailto:faizashrafkk@gmail.com"
+					className="border border-primary text-primary rounded hover:bg-primary hover:text-background-secondary w-fit px-10 py-4 mx-auto mt-5"
+				>
+					Say Hi
+				</Link>
 			</div>
 		</div>
 	);

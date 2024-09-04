@@ -60,11 +60,11 @@ export default function OtherNoteworthyProjects() {
 	];
 
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-3 gap-5 pt-12">
+		<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-12">
 			{noteWorthyProjects.map((project) => (
 				<div
 					key={project.id}
-					className="bg-background-secondary p-7 rounded-lg flex flex-col justify-between"
+					className="bg-background-secondary p-7 rounded flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-2 duration-300"
 				>
 					<div>
 						<div className="flex justify-between mb-5">
