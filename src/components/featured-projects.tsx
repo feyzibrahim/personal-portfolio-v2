@@ -40,7 +40,7 @@ export default function FeaturedProjects() {
 	];
 
 	return (
-		<div className="space-y-12 lg:space-y-24 pb-24">
+		<div className="space-y-12 lg:space-y-24 pb-24 w-full overflow-clip">
 			{featuredProjects.map((project, index) => (
 				<div
 					key={project.id}

@@ -67,6 +67,15 @@ const config: Config = {
 					"5": "hsl(var(--chart-5))",
 				},
 			},
+			keyframes: {
+				customAnimation: {
+					"0%": { transform: "translateY(-20px)", opacity: "0" },
+					"100%": { transform: "translateY(0px)", opacity: "1" },
+				},
+			},
+			animation: {
+				fadeIn: "customAnimation 600ms ease-in-out",
+			},
 		},
 	},
 	plugins: [require("tailwindcss-animate")],

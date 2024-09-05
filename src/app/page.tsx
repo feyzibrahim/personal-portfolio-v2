@@ -10,9 +10,9 @@ export default function Home() {
 	return (
 		<div>
 			{/* Landing Section */}
-			<div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-5 bg-background lg:h-screen px-5 lg:px-32">
+			<div className="grid grid-cols-1 gap-5 lg:gap-0 lg:grid-cols-5 bg-background lg:h-screen px-5 lg:px-32 animate-fadeIn overflow-x-hidden">
 				<div className="lg:space-y-5 flex flex-col pt-20 lg:pt-0 lg:justify-center col-span-3">
-					<p className="text-primary">Hello there, I&apos;m</p>
+					<p className="text-primary ">Hello there, I&apos;m</p>
 					<h1 className="text-3xl lg:text-7xl font-bold mb-4 text-foreground">
 						Feyz Ibrahim.
 					</h1>
@@ -45,7 +45,7 @@ export default function Home() {
 						for more info.
 					</p>
 				</div>
-				<div className="h-full lg:flex items-center justify-center hidden  col-span-2">
+				<div className="h-full lg:flex items-center justify-center hidden col-span-2">
 					<SnakeGame />
 				</div>
 			</div>
@@ -65,7 +65,7 @@ export default function Home() {
 			</div>
 
 			{/* About Me */}
-			<div className="lg:h-screen px-5 lg:px-32 ">
+			<div className="lg:h-screen px-5 lg:px-32" id="about-me">
 				<SectionTitle title="About Me" />
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 					<div className="space-y-5">
@@ -124,13 +124,13 @@ export default function Home() {
 			</div>
 
 			{/* Experience */}
-			<div className="lg:h-screen px-5 lg:px-32 pt-16">
+			<div className="lg:h-screen px-5 lg:px-32 pt-16" id="experience">
 				<SectionTitle title="Experience" isCenter />
 				<ExperienceSwitch />
 			</div>
 
 			{/* Featured Projects */}
-			<div className="px-5 lg:px-40">
+			<div className="px-5 lg:px-40" id="projects">
 				<SectionTitle title="Projects" />
 				<FeaturedProjects />
 			</div>
@@ -147,7 +147,10 @@ export default function Home() {
 			</div>
 
 			{/* Contact  */}
-			<div className="px-5 lg:px-40 pb-20 lg:h-screen flex flex-col justify-center">
+			<div
+				className="px-5 lg:px-40 pb-20 lg:h-screen flex flex-col justify-center"
+				id="contact"
+			>
 				<SectionTitle title="Get In Touch" isCenter />
 				<p className="lg:w-1/2 text-center mx-auto">
 					Although I&apos;m not currently looking for any new opportunities, my

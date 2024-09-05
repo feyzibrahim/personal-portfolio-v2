@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function LeftHanger() {
 	return (
-		<div className="hidden fixed left-10 top-0 lg:flex flex-col items-center gap-5">
+		<div className="hidden fixed left-10 top-0 lg:flex flex-col items-center gap-5 animate-fadeIn">
 			<div className="h-56 w-[1px] bg-foreground-secondary"></div>
 			<Link target="_blank" href="https://github.com/feyzibrahim">
 				<Github className="w-4 h-4 text-foreground-secondary hover:text-primary hover:-translate-y-1 duration-300" />
